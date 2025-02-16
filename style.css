@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+.profile-picture {
+    width:200px;
+    border-radius: 100px;
+}
+.pname {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.ploc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(163, 230, 53);
+}
+.pdesc {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.main-buttons {
+    width: 250px;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+    transition: opacity, 0.15s;
+}
+.main-buttons:hover {
+    opacity: 0.8;
+}
+.main-buttons:active {
+    opacity: 0.6;
+}
