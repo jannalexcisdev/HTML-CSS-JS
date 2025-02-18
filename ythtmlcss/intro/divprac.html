@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .selection {
+            box-shadow: 0px 0px 3px rgb(0, 0, 0);
+            padding-bottom: 20px;
+        }
+        p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .pfp {
+            width: 200px;
+            height: 200px;
+        }
+        .mutual {
+            font-weight: normal;
+            color: grey;
+        }
+        .add {
+            color: white;
+            background-color: skyblue;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search {
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            max-width: 370px;
+            height: 70px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+
+        }
+        .twtpfp {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            margin: 15px;
+        }
+        .status {
+            border: none;
+            font-size: 15px;
+        }
+        .tweet {
+            color: white;
+            background-color: skyblue;
+            border: none;
+            padding:0px;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 15px;
+        }
+
+        .main-div {
+            box-shadow: 0px 0px 10px;
+            width: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .profile-div {
+            display: inline-block;
+            width: 50px;
+        }
+        .desc-div {
+            display: inline-block;  
+            width: 200px;
+
+
+
+        }
+        .pfp1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 5px;
+        }
+        .name1 {
+            
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .desc1 {
+            font-weight: normal;
+            font-size: 15px;
+        }
+        .trend1 {
+            font-weight: normal;
+            font-size: 15px;
+        }
+        .follow-button {
+            display: inline-block;
+            width: 50px;
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+        }
+        .button-div {
+            display: inline-block; 
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="search">
+        <img class="twtpfp" src="/ythtmlcss/intro/img/cat1.jpg" alt="">
+        <input type="text" placeholder="What's Happening?" class="status">
+        <button class="tweet">tweet</button>
+    </div>
+    
+    <div class="main-div">
+        <div class="profile-div">
+            <img class="pfp1" src="/ythtmlcss/intro/img/cat1.jpg" alt="">
+        </div>
+        <div class="desc-div">
+            <p class="name1">Oliver</p>
+            <p class="desc1">the cat</p>
+            <p class="trend1">popular</p>
+        </div>
+        <div class="button-div">
+            <button class="follow-button">follow</button>
+        </div>
+
+    </div>
+
+    <div class="grid-container">
+        <div class="selection">
+            <div>
+                <img class="pfp" src="/ythtmlcss/intro/img/cat1.jpg" alt="">
+            </div>
+            <div>
+                <p class="name">Oliver</p>
+                <p class="mutual">2 Mutual Friends</p>
+                <button class="add">Add Friend</button>
+            </div>
+            
+        </div>
+        <div class="selection">
+            <img class="pfp" src="/ythtmlcss/intro/img/cat2.jpg" alt="">
+            <p class="name">Mimi</p>
+            <p class="mutual">2 Mutual Friends</p>
+            <button class="add">Add Friend</button>
+        </div>
+        <div class="selection">
+            <img class="pfp" src="/ythtmlcss/intro/img/cat3.jpg" alt="">
+            <p class="name">Rex</p>
+            <p class="mutual">2 Mutual Friends</p>
+            <button class="add">Add Friend</button>
+        </div>
+    </div>
+
+</body>
+</html>
