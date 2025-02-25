@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3school js practice</title>
+</head>
+<body>
+    <!-- <h2>What Can JavaScript Do?</h2>
+    <button type = 'button' onclick="document.getElementById('demo').innerHTML = Date()">Click Here to Display Time</button>
+    <p id="demo">JavaScript can change HTML Content.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello World!'">Click Me!</button><br> -->
+
+    <!-- <img src="off.JPG" id="myImage" alt="lightbuld">
+    <button type="button" onclick="document.getElementById('myImage').src='on.JPG'">Turn on</button>
+    <button type="button" onclick="document.getElementById('myImage').src='off.jpg'">Turn off</button> -->
+
+
+    <!-- <p id='demo2'>welcome</p>
+    <script>
+        document.getElementById('demo2').innerHTML = 'My First Javascript';
+    </script> -->
+
+    <!-- <p id="demowhereto">Hello</p>
+    <button type="button" onclick="myFunction()" id="demowhereto">click me</button>
+    <script>
+        document.write(5+6)
+        alert(5+6);
+        console.log(11);
+    </script>
+    <button type="button" onclick="document.write(10+20)">10+20=</button>
+    <button type="button" onclick="window.print()">print this message</button> -->
+
+
+
+ <!-- <p id="demo3"></p>
+ <p id="demo4"></p>
+ <button onclick="myFunction()">Press me</button>
+
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<button onclick="demoFunction()">press me again</button>
+
+<p id="demo8"></p>
+<p id="demo9"></p>
+<button onclick="demoFunction1()">click me</button> -->
+
+
+
+<!-- <p id="demo10"></p>
+<button onclick="myFunction()">click me</button> -->
+
+
+
+<!-- <p id="demo11">hello</p>
+<script>
+    function myFunction(p1,p2) {
+        return p1*p2
+    }
+    let result = myFunction(5,10)
+    document.getElementById('demo11').innerHTML = result
+</script> -->
+
+<!-- <p id="demo12"></p>
+<p id="demo13"></p>
+
+<script>
+let text = "Outside: " + typeof carName;
+document.getElementById("demo12").innerHTML = text;
+
+function myFunction() {
+  let carName = "Volvo";
+  let text = "Inside: " + typeof carName + " " + carName ; 
+  document.getElementById("demo13").innerHTML= text;
+}
+
+myFunction();
+</script> -->
+
+
+
+<!-- <p id="demo14"></p>
+<p id="demo15"></p>
+<script>
+    const person = {}
+    person.firstName = 'Jann';
+    person.lastName = "Mercado";
+    person.age = 22;
+
+    person.fullName = function() {
+        return this.firstName + " " + this.lastName;
+    };
+
+    document.getElementById('demo14').innerHTML = 
+    person.firstName + " " + person.lastName + " is " + person.age + " Years Old."
+    document.getElementById('demo15').innerHTML = person.fullName();
+</script> -->
+
+<!-- <p id="demo16"></p>
+<p id="demo17"></p>
+<script>
+    const person = {
+        firstName : 'Jann',
+        lastName : "Mercado",
+        age : 22,
+        fullName: function() {
+            return (this.firstName + " " + this.lastName).toUpperCase();
+        }
+    };
+    document.getElementById('demo16').innerHTML = 
+    person.firstName + " " + person.lastName + " is " + person.age + "years old.";
+    document.getElementById('demo17').innerHTML = person.fullName() 
+</script> -->
+
+
+
+
+<!-- <p id="demo18"></p>
+<script>
+    const person = {
+        firstName : 'Jann',
+        lastName : "Mercado",
+        age : 22,
+        city: 'Rosario'
+    }
+
+    let text = '';
+    for (let x in person) {
+        text += person[x] + " ";
+    };
+    
+    document.getElementById('demo18').innerHTML = text;
+</script> -->
+
+
+
+<!-- <p id="demo19"></p>
+<script>
+    const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    };
+    const myArray = Object.values(person);
+    document.getElementById('demo19').innerHTML = myArray;
+</script> -->
+
+
+<!-- <p id="demo20"></p>
+
+<script>
+const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+
+let text = "";
+for (let [fruit, value] of Object.entries(fruits)) {
+    text+= fruit + ": " + value + '<br>'
+}
+
+document.getElementById("demo20").innerHTML = text;
+</script> -->
+
+<!-- <p id="demo21"></p> -->
+
+
+
+<!-- <p id="demo22"></p>
+<p id="demo23"></p> -->
+
+
+
+<!-- <button onclick="document.getElementById('demo23').innerHTML=Date()">The time is?</button>
+<p id="demo23"></p>
+
+<button onclick="this.innerHTML=Date()">click me</button>
+
+<p id="demo24"></p>
+<button onclick="displayDate()">What time is it?</button> -->
+
+
+
+<p id="demo25"></p> 
+<p id="demo26"></p>
+<p id=demo27></p>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="w3schoolsJS.js"></script>
+</body>
+</html>
