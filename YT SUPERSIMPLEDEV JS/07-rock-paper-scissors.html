@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+  <p>Rock Paper Scissors</p>
+
+  <button onClick="
+  computerChoice = computerMove();
+  result = winner('Rock');
+    alert(`You picked Rock. The computer picked ${computerChoice}. ${result}`);
+  ">Rock</button>
+
+  <button onClick="
+  computerChoice = computerMove();
+  result = winner('Paper');
+    alert(`You picked Paper. The computer picked ${computerChoice}. ${result}`);
+  ">Paper</button>
+
+  <button onClick="
+  computerChoice = computerMove();
+  result = winner('Scissors');
+    alert(`You picked Scissors. The computer picked ${computerChoice}. ${result}`);
+  ">Scissors</button>
+
+  <script>
+    function computerMove () {
+      let randomNumber = Math.random();
+      let computerChoice = '';
+
+    if (randomNumber <= 0.333) {
+      computerChoice = 'Rock';
+    } else if (randomNumber <= 0.666) {
+      computerChoice = 'Paper';
+    } else {
+      computerChoice = 'Scissors';
+    };
+      return computerChoice;
+    };
+
+    function winner (playerChoice) {
+      let computerChoice = computerMove();
+      let result = '';
+
+      if (playerChoice === computerChoice) {
+        result = 'It\'s a tie!';
+      } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
+        result = 'You won!';
+      } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
+        result = 'You won!';
+      } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
+        result = 'You won!';
+      } else {
+        result = 'You lost!';
+      };
+      return result;
+    }
+  </script>
+</body>
+</html>

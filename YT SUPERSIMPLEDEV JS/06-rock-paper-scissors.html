@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+  <p>Rock Paper Scissors</p>
+
+  <button onClick="
+    let randomNumber = Math.random();
+    let computerChoice = '';
+
+    if (randomNumber <= 0.33) {
+      computerChoice = 'Rock. It\'s a tie!';
+    } else if (randomNumber <= 0.666) {
+      computerChoice = 'Paper. You Lost';
+    } else {
+      computerChoice = 'Scissors. You Won';
+    };
+    alert(`You picked Rock. The computer picked ${computerChoice}`);
+  ">Rock</button>
+
+  <button onClick="
+    let randomNumber = Math.random();
+    let computerChoice = '';
+
+    if (randomNumber <= 0.33) {
+      computerChoice = 'Rock. You won!';
+    } else if (randomNumber <= 0.666) {
+      computerChoice = 'Paper. It\'s a tie';
+    } else {
+      computerChoice = 'Scissors. You Lost';
+    };
+    alert(`You picked Paper. The computer picked ${computerChoice}`);
+  ">Paper</button>
+
+  <button onClick="
+    let randomNumber = Math.random();
+    let computerChoice = '';
+
+    if (randomNumber <= 0.33) {
+      computerChoice = 'Rock. You Lost!';
+    } else if (randomNumber <= 0.666) {
+      computerChoice = 'Paper. You Won';
+    } else {
+      computerChoice = 'Scissors. It\'s a tie';
+    };
+    alert(`You picked Scissors. The computer picked ${computerChoice}`);
+  ">Scissors</button>
+
+  <script>
+
+
+
+
+  </script>
+</body>
+</html>
