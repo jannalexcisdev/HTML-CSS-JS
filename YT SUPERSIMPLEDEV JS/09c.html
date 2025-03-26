@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="js-heads" onclick="choice('heads')">heads</button>
+  <button class="js-tails" onclick="choice('tails')">tails</button>
+  <p class="js-p">HAHAHAHAHA</p>
+  <script>
+    function choice (ch) {
+      if (ch === 'heads') {
+        document.querySelector('.js-p').innerHTML = 'You chose: Heads';
+      } else if (ch === 'tails') {
+        document.querySelector('.js-p').innerHTML = 'You chose: Tails';
+      }
+    };
+  </script>
+</body>
+</html>

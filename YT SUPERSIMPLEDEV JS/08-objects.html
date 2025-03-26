@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    // const product = {
+    //   name: 'socks',
+    //   price: 1090
+    // };
+    // console.log(product);
+    // console.log(product.name);
+    // console.log(product.price);
+
+    // product.name = 'cotton socks';
+    // console.log(product.name);
+
+    // product.newProperty = true;
+    // console.log(product);
+    // console.log(product.newProperty)
+
+    // delete product.newProperty;
+    // console.log(product);
+
+    // const product2 = {
+    //   name: 'shirt',
+    //   'delivery-time': '1 day',
+    //   rating: {
+    //     stars: 4.5,
+    //     count: 87
+    //   },
+    //   fun: function (){
+    //     console.log('function inside object')
+    //   }
+    // };
+
+    // console.log(product2)
+    // console.log(product2.name)
+    // console.log(product2['name']) //only use when dot notation does not work
+    // console.log(product2['delivery-time'])
+    
+    // console.log(product2.rating.count)
+    // product2.fun();
+    // console.log(typeof console.log)
+
+    // console.log(JSON.stringify(product2))
+
+    // const jsonString = JSON.stringify(product2)
+    // console.log(JSON.parse(jsonString))
+
+    console.log('hello'.length);
+    console.log('hello'.toLocaleUpperCase())
+
+    const object1 = { //<- objects have unique references
+      message: 'hello'
+    };
+    const object2 = object1;  //<- reference lang ginagaya
+    object1.message = 'good job';
+    console.log(object1);
+    console.log (object2);
+
+    const object3 = {
+      message: 'good job'
+    };
+
+    console.log(object3 === object1); //<- different references so false
+    console.log(object2 === object1); //<- same referennce so true
+
+    const object4 = {
+      message: 'good job',
+      price: 7.99
+    };
+    // const message = object4.message;
+    const { message, price } = object4;   //<-destructuring same as line 76
+    console.log(message, price)
+
+    const object5 = {
+      // message: message
+      message, //<- same as above line 81
+      // method: function () {
+      //   console.log('method');
+      // }
+      method() {        //<- same as line 83-85
+        console.log('method');
+      }
+    };
+    console.log(object5);
+    object5.method();
+
+    
+  </script>
+</body>
+</html>

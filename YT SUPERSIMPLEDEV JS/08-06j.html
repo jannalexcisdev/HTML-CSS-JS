@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick="
+    computerGuess('heads');
+      ">heads</button>
+    
+    <button onclick="
+    computerGuess('tails');
+    ">tails</button>
+
+    <button onclick="
+      score.win = 0;
+      score.loss = 0;
+      localStorage.removeItem('score')
+
+    ">reset score</button>
+    
+    <script>
+
+        const score = JSON.parse(localStorage.getItem('score')) || {
+          win: 0,
+          loss: 0
+        };
+
+
+      function computerGuess (guess) {
+        let result;
+        let randomNumber = Math.random();
+
+
+
+        if (randomNumber < 0.5) {
+          result = (guess === 'heads') ? 'You Win' : 'You Lost'
+        } else {
+          result = (guess ==='tails') ? 'You Win' : 'You Lost'
+        }
+        localStorage.setItem('score', JSON.stringify(score))
+        if (result === 'You Win') {
+          score.win +=1;
+        } else {
+          score.loss +=1;
+        }
+
+
+
+        alert (`${result} \n Win: ${score.win} Loss: ${score.loss}`)
+      }
+
+
+    </script>
+  </body>
+</html>
