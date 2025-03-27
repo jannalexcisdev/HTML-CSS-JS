@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Exercises</title>
+  <style>
+    .add-to-cart-button {
+      background-color: rgb(255, 216, 20);
+      padding: 5px 20px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .request-now-button {
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .schedule-for-later-button {
+      background-color: rgb(230, 230, 230);
+      border: none;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .js-cart-clicked {
+      color: black;
+      background-color: rgb(240, 240, 240);
+    }
+
+    .status {
+      padding: 20px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+    .js-status {
+      background-color: whitesmoke;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <button class="add-to-cart-button js-cart" onclick="bling()">Add to Cart</button>
+  <button class="request-now-button">Request Now</button>
+  <button class="schedule-for-later-button">Schedule for Later</button>
+  <p></p>
+  <button class="js-button">Test</button>
+  <p></p>
+  <button class="status js-status" onclick="status()">Gaming</button>
+  <button class="status js-status" onclick="status()">Music</button>
+  <button class="status js-status" onclick="status()">Coding</button>
+
+  <script>
+    let result = document.querySelector('.js-button');
+    console.log(result.classList.contains('js-button'));
+
+    function bling () {
+      let bleng = document.querySelector('.js-cart');
+      if (bleng.innerHTML === 'Add to Cart') {
+        bleng.innerHTML = 'Added to Cart';
+        bleng.classList.add('js-cart-clicked');
+      } else {
+        bleng.innerHTML = 'Add to Cart';
+        bleng.classList.remove('js-cart-clicked');
+      }
+    };
+    function status () {
+        let stats = document.querySelector('.js-status');
+        if (stats.innerHTML === 'Gaming') {
+          stats.classList.add('js-status')
+        };
+      };
+</script>
+</body>
+</html>
