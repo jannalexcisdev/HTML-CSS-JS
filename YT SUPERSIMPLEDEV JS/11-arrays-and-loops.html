@@ -52,18 +52,67 @@
     //   console.log(value);
     // }
 
-    const nums = [1,2,3];
-    const newArray = [];
-    let total = 0;
+    // const nums = [1,2,3];
+    // const newArray = [];
+    // let total = 0;
 
-    for (let i = 0; i < nums.length; i ++) {
-      let value = nums[i];
-      total += value;
-      value *= 2;
-      newArray.push(value);
+    // for (let i = 0; i < nums.length; i ++) {
+    //   let value = nums[i];
+    //   total += value;
+    //   value *= 2;
+    //   newArray.push(value);
+    // }
+    // console.log(total);
+    // console.log(newArray);
+
+
+    const array1 = [1,2,3];
+    const array2 = array1.slice();
+    array2.push(4);
+    console.log(array2);
+    console.log(array1);
+
+    const [firstvalue, secondvalue] = [1,2,3];
+
+    for (let i = 1; i<=10; i++) {
+      if (i % 3 === 0) {
+        continue;
+      }
+      console.log(i);
+      if (i === 8) {
+        break;
+      }
     }
-    console.log(total);
-    console.log(newArray);
+    
+    let i = 1
+    while (i <=10) {
+      if (i % 3 === 0) {
+        i++
+        continue;
+      }
+      console.log (i);
+      i++;
+    }
+
+   
+
+    function doubleArray (nums) {
+      const numsDoubled = [];
+
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        if (num === 0) {
+          return numsDoubled;
+        }
+        numsDoubled.push(num*2);
+      }
+      return numsDoubled;
+    }
+
+    const test = doubleArray([1,2,3])
+    const test2 = doubleArray([2,4,0,6])
+    console.log(test, test2)
+
   </script>
 </body>
 </html>

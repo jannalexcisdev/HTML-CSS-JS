@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // const hello = ['hello', 'das', 'world', 'search']
+    // for (let i=1; i<hello.length; i++) {
+    //   const item = hello[i];
+    //   if (hello[i] === 'search') {
+    //     console.log(i);
+    //   } 
+    // }
+
+
+    // function removeEggs (array) {
+    //   const maxegg = 2;
+    //   let eggremoved = 0;
+    //   const array1 = array.slice()
+    //   for (let i = 0; i<array.reverse().length; i++) {
+    //     const item = array[i];
+
+    //     if (eggremoved <= maxegg) {
+    //       if (item ==='egg') {
+    //         array.splice(i,1)
+    //       }
+    //     }
+    //   }
+    //   console.log(array1)
+    //   console.log(array)
+    // }
+
+    // removeEggs(['egg','chicken', 'hen', 'egg', 'egg', 'rooster'])
+
+
+    function fizzBuzz () {
+      for (let i = 1; i<=20; i++) {
+        if (i % 3 === 0) {
+          console.log('Fizz')
+          continue;
+        }
+        if (i % 5 === 0) {
+          console.log('Buzz')
+          continue;
+        }
+        console.log(i);
+
+      }
+    }
+    fizzBuzz()
+  </script>
+</body>
+</html>
