@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script type="module">
+    import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
+    // const today = dayjs()
+    // let targetDate = today.add(5, 'days');
+    // console.log (targetDate.format('MMMM,D'));
+
+    // targetDate= today.add(30, 'days');
+    // console.log(targetDate.format('MMMM, D'));
+
+    // targetDate = today.subtract(1, 'days');
+    // console.log(targetDate.format('MMMM, D'));
+
+    // console.log(today.format('dddd'));
+    const today = dayjs()
+    let date = today.add(10, 'days')
+
+    function isWeekend(date) {
+      let datee = date.format('dddd')
+      if (datee === 'Saturday' && datee ==='Sunday') {
+        console.log('it is weekend')
+      } else {
+        console.log('it is weekdays')
+      }
+    };
+    isWeekend(date)
+
+
+  </script>
+</body>
+</html>
