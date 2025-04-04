@@ -1,30 +1,19 @@
 import {formatCurrency} from '../scripts/utils/money.js';
 
-console.log('test suite: formatCurrency');
+describe('test suite: format currency', () => {
+  it('converts cents into dollars', () => {
+    expect(formatCurrency(2095)).toEqual('20.95');//compares a value to another value
+  }); //function that creates a test params are desc, testFunc, test
 
-console.log('converts cents into dollars');
-if (formatCurrency(2095) ==='20.95') { //basic test case
-  console.log('passed');
-} else {
-  console.log('failed');
-}
-console.log('works with zero');
-if (formatCurrency(0) === '0.00') { //edge test case
-  console.log('passed');
-} else {
-  console.log('failed');
-}
+  it('works with zero', ()=> {
+    expect(formatCurrency(0)).toEqual('0.00');
+  });
 
-console.log('rounds up to the nearest cent');
-if (formatCurrency(2000.5) === '20.01') { //edge test case
-  console.log('passed');
-} else {
-  console.log('failed');
-}
+  it ('rounds up to the nearest cent', ()=>{
+    expect(formatCurrency(2000.5)).toEqual('20.01')
+  });
 
-console.log('rounds down to the nearest cent');
-if (formatCurrency(2000.4) === '20.00') { //edge test case
-  console.log('passed');
-} else {
-  console.log('failed');
-}
+  it ('rounds down to the nearest cent', ()=> {
+    expect(formatCurrency(2000.4)).toEqual('20.00')
+  });
+}) //test suite
