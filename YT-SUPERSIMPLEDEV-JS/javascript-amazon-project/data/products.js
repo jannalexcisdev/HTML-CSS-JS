@@ -83,6 +83,7 @@ class Clothing extends Product{
 
 // object3.method();
 
+
 export let products = [];
 
 export function loadProducts (fun) {
@@ -100,11 +101,16 @@ export function loadProducts (fun) {
 
       fun();
   });
+  //HAHAHAHAHA
+  //   if (typeof fun === 'function') {
+  //     fun();
+  //   }
+  // });
 
   xhr.open('GET', 'https://supersimplebackend.dev/products');
   xhr.send();
 }
-loadProducts();
+// loadProducts();
 // export const products = [
 //   {
 //     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
